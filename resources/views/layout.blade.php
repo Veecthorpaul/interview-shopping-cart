@@ -51,14 +51,14 @@
                                 </div>
                                 <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
                                     <p>{{ $details['name'] }}</p>
-                                    <span class="price text-info"> ${{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
+                                    <span class="price text-info"> ${{ $details['price'] }}</span>
                                 </div>
                             </div>
                         @endforeach
                     @endif
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
-                            <a href="{{ url('cart') }}" class="btn btn-info btn-block">View all</a>
+                            <a href="{{ route('cart') }}" class="btn btn-info btn-block">View all</a>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'ProductsController@index');
 
-Route::get('cart', 'ProductsController@cart');
+Route::get('cart', 'ProductsController@cart')->name('cart');
 
 Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 
